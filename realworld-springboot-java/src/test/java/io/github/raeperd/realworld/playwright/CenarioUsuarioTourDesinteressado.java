@@ -5,7 +5,7 @@ import com.microsoft.playwright.options.AriaRole;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
-public class CenarioUsuario {
+public class CenarioUsuarioTourDesinteressado {
 
     public static void main(String[] args) {
 
