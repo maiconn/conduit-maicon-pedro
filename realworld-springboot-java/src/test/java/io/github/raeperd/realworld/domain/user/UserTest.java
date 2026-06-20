@@ -1,10 +1,18 @@
 package io.github.raeperd.realworld.domain.user;
 
+import io.github.raeperd.realworld.domain.article.ArticleTitle;
+import io.github.raeperd.realworld.domain.article.ArticleContents;
+import io.github.raeperd.realworld.domain.article.ArticleUpdateRequest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.test.util.ReflectionTestUtils;
+
+import java.util.Set;
+
+import static io.github.raeperd.realworld.domain.user.UserTestUtils.userWithEmailAndName;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.times;
@@ -121,5 +129,135 @@ class UserTest {
         user.changeImage(imageToChange);
 
         assertThat(user.getImage()).isEqualTo(imageToChange);
+    }
+
+    @Test
+    void when_writeArticle_expect_article_author_and_contents_match() {
+        final var user = userWithEmailAndName("a@b.com", "author");
+        final var contents = new ArticleContents(
+                "desc",
+                ArticleTitle.of("title"),
+                "body",
+                Set.of()
+        );
+
+        final var article = user.writeArticle(contents);
+
+        assertThat(article.getAuthor()).isEqualTo(user);
+        assertThat(article.getContents().getBody()).isEqualTo("body");
+        assertThat(article.getContents().getTitle().getTitle()).isEqualTo("title");
+    }
+
+    @Test
+    void when_updateArticle_and_is_author_expect_contents_updated() {
+        final var user = userWithEmailAndName("u1@e.com", "u1");
+        final var contents = new ArticleContents(
+                "desc",
+                ArticleTitle.of("old-title"),
+                "old-body",
+                Set.of()
+        );
+        final var article = user.writeArticle(contents);
+
+        final var updateRequest = ArticleUpdateRequest.builder()
+                .titleToUpdate(ArticleTitle.of("new-title"))
+                .descriptionToUpdate("new-desc")
+                .bodyToUpdate("new-body")
+                .build();
+
+        final var updated = user.updateArticle(article, updateRequest);
+
+        assertThat(updated.getContents().getTitle().getTitle()).isEqualTo("new-title");
+        assertThat(updated.getContents().getDescription()).isEqualTo("new-desc");
+        assertThat(updated.getContents().getBody()).isEqualTo("new-body");
+    }
+
+    @Test
+    void when_updateArticle_and_not_author_expect_throw() {
+        final var author = userWithEmailAndName("author@e.com", "author");
+        final var other = userWithEmailAndName("other@e.com", "other");
+        final var contents = new ArticleContents(
+                "desc",
+                ArticleTitle.of("t"),
+                "b",
+                Set.of()
+        );
+        final var article = author.writeArticle(contents);
+
+        final var updateRequest = ArticleUpdateRequest.builder()
+                .bodyToUpdate("new-body")
+                .build();
+
+        org.junit.jupiter.api.Assertions.assertThrows(IllegalAccessError.class, () -> other.updateArticle(article, updateRequest));
+    }
+
+    @Test
+    void when_comment_and_delete_expect_removed_only_when_author_and_comment_author() {
+        final var user = userWithEmailAndName("u@e.com", "u");
+        final var contents = new ArticleContents(
+                "desc",
+                ArticleTitle.of("t"),
+                "b",
+                Set.of()
+        );
+        final var article = user.writeArticle(contents);
+
+        final var comment = user.writeCommentToArticle(article, "hello");
+        ReflectionTestUtils.setField(comment, "id", 1L);
+
+        user.deleteArticleComment(article, 1L);
+
+        assertThat(article.getComments()).doesNotContain(comment);
+    }
+
+    @Test
+    void when_delete_non_existing_comment_expect_NoSuchElementException() {
+        final var user = userWithEmailAndName("u2@e.com", "u2");
+        final var contents = new ArticleContents(
+                "desc",
+                ArticleTitle.of("t"),
+                "b",
+                Set.of()
+        );
+        final var article = user.writeArticle(contents);
+
+        org.junit.jupiter.api.Assertions.assertThrows(java.util.NoSuchElementException.class, () -> user.deleteArticleComment(article, 999L));
+    }
+
+    @Test
+    void when_favorite_and_unfavorite_expect_favorited_state_and_count_change() {
+        final var user = userWithEmailAndName("fav@e.com", "fav");
+        final var other = userWithEmailAndName("author@e.com", "author");
+        final var contents = new ArticleContents(
+                "desc",
+                ArticleTitle.of("t"),
+                "b",
+                Set.of()
+        );
+        final var article = other.writeArticle(contents);
+
+        final var afterFav = user.favoriteArticle(article);
+
+        assertThat(afterFav.isFavorited()).isTrue();
+        assertThat(afterFav.getFavoritedCount()).isEqualTo(1);
+
+        final var afterUnfav = user.unfavoriteArticle(article);
+
+        assertThat(afterUnfav.isFavorited()).isFalse();
+        assertThat(afterUnfav.getFavoritedCount()).isZero();
+    }
+
+    @Test
+    void when_follow_and_unfollow_expect_viewProfile_reflects_following() {
+        final var follower = userWithEmailAndName("f@e.com", "f");
+        final var followee = userWithEmailAndName("ee@e.com", "ee");
+
+        follower.followUser(followee);
+
+        assertThat(follower.viewProfile(followee)).hasFieldOrPropertyWithValue("following", true);
+
+        follower.unfollowUser(followee);
+
+        assertThat(follower.viewProfile(followee)).hasFieldOrPropertyWithValue("following", false);
     }
 }
