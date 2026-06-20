@@ -1,0 +1,681 @@
+
+ ISSUES: 415 
+
+realworld-app-angular-v20/.postcssrc.json:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-app-angular-v20/src/app/app.config.ts:14:14
+  14:14  low     Trailing whitespace  editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/app.html:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+    2:2  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+    6:6  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  14:16  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  24:25  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  32:33  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  40:41  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  51:51  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  54:59  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  65:66  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  72:73  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  92:93  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/app.routes.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+  24:24  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  29:29  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  34:34  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  39:39  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  44:44  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/app.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+  26:26  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  33:33  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/core/auth/auth-service.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+  66:66  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  70:71  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/core/interceptors/auth-interceptor.ts:12:12
+  12:12  low     Trailing whitespace  editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/core/models/article-comment.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-app-angular-v20/src/app/core/models/article.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-app-angular-v20/src/app/core/models/auth/user.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-app-angular-v20/src/app/core/models/author.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-app-angular-v20/src/app/core/models/profile.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-app-angular-v20/src/app/core/services/article-service.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+  16:16  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  34:34  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/core/services/comment-service.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-app-angular-v20/src/app/core/services/profile-service.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-app-angular-v20/src/app/core/services/tag-service.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-app-angular-v20/src/app/core/services/user-service.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-app-angular-v20/src/app/features/article-details/article-details.html:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+    6:6  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  10:10  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  17:17  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  35:37  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  41:41  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  43:44  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  56:56  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  62:62  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  69:69  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  77:77  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  81:81  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/features/article-details/article-details.ts:21:21
+  21:21  low     Trailing whitespace  editorconfig-checker:trim_trailing_whitespace
+  68:73  low     Trailing whitespace  editorconfig-checker:trim_trailing_whitespace
+  76:76  low     Trailing whitespace  editorconfig-checker:trim_trailing_whitespace
+  82:87  low     Trailing whitespace  editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/features/auth/login/login.html:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+    3:3  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  35:35  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/features/auth/login/login.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-app-angular-v20/src/app/features/auth/register/register.html:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+    3:3  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/features/auth/register/register.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+  35:35  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/features/create-edit-article/create-edit-article.html:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-app-angular-v20/src/app/features/create-edit-article/create-edit-article.ts:0:0
+    0:0  low     Final newline expected                              editorconfig-checker:insert_final_newline
+  36:36  low     Trailing whitespace                                 editorconfig-checker:trim_trailing_whitespace
+  65:65  low     Trailing whitespace                                 editorconfig-checker:trim_trailing_whitespace
+  90:90  note    // TODO: make an error handler component for forms  ripgrep:TODO
+
+realworld-app-angular-v20/src/app/features/home/home.html:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+    5:5  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+    7:7  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  12:12  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  15:15  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  27:27  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  30:30  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  48:50  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  67:67  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/features/home/home.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+  25:25  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  28:28  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  76:76  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+109:109  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/features/profile/profile-page.html:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+    7:9  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  13:13  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  15:15  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  21:21  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  23:23  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  29:29  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  35:35  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  45:45  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  49:49  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  51:51  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  57:57  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  67:69  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  82:82  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  84:84  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  90:90  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  95:97  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+107:107  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/features/profile/profile-page.ts:36:36
+  36:36  low     Trailing whitespace  editorconfig-checker:trim_trailing_whitespace
+  50:50  low     Trailing whitespace  editorconfig-checker:trim_trailing_whitespace
+  57:57  low     Trailing whitespace  editorconfig-checker:trim_trailing_whitespace
+  67:68  low     Trailing whitespace  editorconfig-checker:trim_trailing_whitespace
+  87:87  low     Trailing whitespace  editorconfig-checker:trim_trailing_whitespace
+106:109  low     Trailing whitespace  editorconfig-checker:trim_trailing_whitespace
+122:125  low     Trailing whitespace  editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/features/settings/settings.html:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+    5:5  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  12:12  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  15:16  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  24:25  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  40:42  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  48:50  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  56:56  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/features/settings/settings.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-app-angular-v20/src/app/shared/formatting.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-app-angular-v20/src/app/shared/ui/article-preview/article-preview.html:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+   6:11  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  14:19  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  34:34  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  44:44  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  56:56  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  61:63  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/shared/ui/article-preview/article-preview.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-app-angular-v20/src/app/shared/ui/comment-list/comment-list.html:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+    6:6  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  13:13  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  15:17  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  20:20  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  33:35  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  40:40  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  43:43  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  51:51  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  54:56  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  61:62  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  74:74  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/shared/ui/comment-list/comment-list.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+  24:24  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  30:32  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+  58:58  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/shared/ui/popular-tags/popular-tags.html:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+    2:3  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/shared/ui/popular-tags/popular-tags.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+  14:14  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/app/shared/validators.ts:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+    8:9  low     Trailing whitespace     editorconfig-checker:trim_trailing_whitespace
+
+realworld-app-angular-v20/src/environments/environment.ts:3:3
+    3:3  note    apiUrl: 'http://localhost:8080' // TODO: Update for production  ripgrep:TODO
+
+realworld-app-angular-v20/src/styles.css:0:0
+    0:0  low     Final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/Dockerfile:12:0
+   12:0  medium  Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`  hadolint:DL3018
+  13:13  low     Replace this invocation of curl with the ADD instruction.                                  radarlint-iac:docker:S7026
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/RealWorldApplication.java:0:0
+    0:0  low     No final newline expected                          editorconfig-checker:insert_final_newline
+   9:11  low     Wrong indent style found (tabs instead of spaces)  editorconfig-checker:indent_style
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/WebMvcConfiguration.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/article/ArticleModel.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/article/ArticlePostRequestDTO.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/article/ArticlePutRequestDTO.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/article/ArticleRestController.java:0:0
+    0:0  low     No final newline expected                                editorconfig-checker:insert_final_newline
+  70:71  low     Wrong amount of left-padding spaces(want multiple of 4)  editorconfig-checker:indent_size
+  78:78  low     Wrong amount of left-padding spaces(want multiple of 4)  editorconfig-checker:indent_size
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/article/MultipleArticleModel.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/article/comment/CommentModel.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/article/comment/CommentPostRequestDTO.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/article/comment/CommentRestController.java:0:0
+    0:0  low     No final newline expected                                editorconfig-checker:insert_final_newline
+  24:24  low     Wrong amount of left-padding spaces(want multiple of 4)  editorconfig-checker:indent_size
+  41:41  low     Wrong amount of left-padding spaces(want multiple of 4)  editorconfig-checker:indent_size
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/article/comment/MultipleCommentModel.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/security/JWTAuthenticationFilter.java:0:0
+    0:0  low     No final newline expected           editorconfig-checker:insert_final_newline
+  29:29  low     Line too long (157 instead of 120)  editorconfig-checker:max_line_length
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/security/SecurityConfiguration.java:0:0
+    0:0  low     No final newline expected                                     editorconfig-checker:insert_final_newline
+  35:35  medium  This block of commented-out lines of code should be removed.  radarlint-java:java:S125
+  47:47  low     Line too long (123 instead of 120)                            editorconfig-checker:max_line_length
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/tag/TagRestController.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/tag/TagsModel.java:0:0
+    0:0  low     No final newline expected                 editorconfig-checker:insert_final_newline
+  10:10  medium  Remove this unused "tags" private field.  radarlint-java:java:S1068
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/user/ProfileModel.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/user/ProfileRestController.java:0:0
+    0:0  low     No final newline expected                                editorconfig-checker:insert_final_newline
+  28:28  low     Wrong amount of left-padding spaces(want multiple of 4)  editorconfig-checker:indent_size
+  38:38  low     Wrong amount of left-padding spaces(want multiple of 4)  editorconfig-checker:indent_size
+  45:45  low     Wrong amount of left-padding spaces(want multiple of 4)  editorconfig-checker:indent_size
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/user/UserLoginRequestDTO.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/user/UserModel.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/user/UserPostRequestDTO.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/user/UserPutRequestDTO.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/user/UserRestController.java:0:0
+    0:0  low     No final newline expected                                editorconfig-checker:insert_final_newline
+  48:48  low     Wrong amount of left-padding spaces(want multiple of 4)  editorconfig-checker:indent_size
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/article/Article.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/article/ArticleContents.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/article/ArticleFindService.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/article/ArticleRepository.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/article/ArticleService.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/article/ArticleTitle.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/article/ArticleUpdateRequest.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/article/comment/Comment.java:0:0
+    0:0  low     No final newline expected           editorconfig-checker:insert_final_newline
+  78:78  low     Line too long (157 instead of 120)  editorconfig-checker:max_line_length
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/article/comment/CommentService.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/article/tag/Tag.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/article/tag/TagRepository.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/article/tag/TagService.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/jwt/JWTDeserializer.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/jwt/JWTPayload.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/jwt/JWTSerializer.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/user/Email.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/user/Image.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/user/Password.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/user/Profile.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/user/ProfileService.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/user/User.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/user/UserName.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/user/UserRepository.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/user/UserService.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/user/UserSignUpRequest.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/user/UserUpdateRequest.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/infrastructure/jwt/Base64URL.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/infrastructure/jwt/HmacSHA256.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/infrastructure/jwt/HmacSHA256JWTService.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/infrastructure/jwt/JWTConfiguration.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/infrastructure/jwt/UserJWTPayload.java:0:0
+    0:0  low     No final newline expected                                editorconfig-checker:insert_final_newline
+  24:25  low     Wrong amount of left-padding spaces(want multiple of 4)  editorconfig-checker:indent_size
+
+realworld-springboot-java/src/main/java/io/github/raeperd/realworld/infrastructure/repository/SpringDataJPAConfiguration.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/IntegrationTest.java:0:0
+    0:0  low     No final newline expected                                                                  editorconfig-checker:insert_final_newline
+  22:22  low     Wrong amount of left-padding spaces(want multiple of 4)                                    editorconfig-checker:indent_size
+  42:42  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+  45:45  low     Line too long (135 instead of 120)                                                         editorconfig-checker:max_line_length
+  52:52  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+  62:62  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+  75:75  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+  77:77  high    Define a constant instead of duplicating this literal "Token " 19 times.                   radarlint-java:java:S1192
+  84:84  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+  95:95  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+  98:98  low     Line too long (147 instead of 120)                                                         editorconfig-checker:max_line_length
+105:105  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+118:118  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+128:128  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+138:138  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+139:139  high    Define a constant instead of duplicating this literal "/articles" 3 times.                 radarlint-java:java:S1192
+159:159  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+168:168  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+176:176  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+186:186  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+196:196  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+197:197  high    Define a constant instead of duplicating this literal "/articles/{slug}" 3 times.          radarlint-java:java:S1192
+197:197  high    Define a constant instead of duplicating this literal "how-to-train-your-dragon" 8 times.  radarlint-java:java:S1192
+204:204  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+216:216  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+231:231  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+240:240  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+248:248  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+257:257  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+267:267  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+277:277  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+287:287  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+297:297  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.             radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/IntegrationTestUtils.java:0:0
+    0:0  low     No final newline expected           editorconfig-checker:insert_final_newline
+  13:13  low     Line too long (149 instead of 120)  editorconfig-checker:max_line_length
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/application/article/ArticleRestControllerTest.java:39:39
+  39:39  low     Line too long (122 instead of 120)                                              editorconfig-checker:max_line_length
+  39:39  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  48:48  high    Define a constant instead of duplicating this literal "description" 5 times.    radarlint-java:java:S1192
+  49:49  high    Define a constant instead of duplicating this literal "title" 5 times.          radarlint-java:java:S1192
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/application/article/comment/CommentRestControllerTest.java:33:33
+  33:33  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  45:45  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/application/security/WithMockJWTUser.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/application/security/WithMockJWTUserContextFactory.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/application/tag/TagRestControllerTest.java:39:39
+  39:39  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/application/user/ProfileRestControllerTest.java:0:0
+    0:0  low     No final newline expected                                                              editorconfig-checker:insert_final_newline
+  32:32  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.         radarlint-java:java:S100
+  35:35  high    Define a constant instead of duplicating this literal "/profiles/{username}" 4 times.  radarlint-java:java:S1192
+  40:40  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.         radarlint-java:java:S100
+  41:41  high    Define a constant instead of duplicating this literal "sample-user-name" 3 times.      radarlint-java:java:S1192
+  50:50  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.         radarlint-java:java:S100
+  59:59  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.         radarlint-java:java:S100
+  60:60  high    Define a constant instead of duplicating this literal "sample-username" 5 times.       radarlint-java:java:S1192
+  68:68  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.         radarlint-java:java:S100
+  75:75  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.         radarlint-java:java:S100
+  76:76  low     Line too long (126 instead of 120)                                                     editorconfig-checker:max_line_length
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/application/user/UserRestControllerTest.java:52:52
+  52:52  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.   radarlint-java:java:S100
+  60:60  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.   radarlint-java:java:S100
+  71:71  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.   radarlint-java:java:S100
+  72:72  high    Define a constant instead of duplicating this literal "password" 6 times.        radarlint-java:java:S1192
+  72:72  high    Define a constant instead of duplicating this literal "user@email.com" 7 times.  radarlint-java:java:S1192
+  82:82  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.   radarlint-java:java:S100
+  95:95  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.   radarlint-java:java:S100
+106:106  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.   radarlint-java:java:S100
+118:118  high    Define a constant instead of duplicating this literal "username" 4 times.        radarlint-java:java:S1192
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/article/ArticleContentsTest.java:17:17
+  17:17  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  27:27  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/article/ArticleRepositoryTest.java:29:29
+  29:29  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  36:36  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/article/ArticleServiceTest.java:45:45
+  45:45  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  54:54  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  65:65  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  75:75  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  86:86  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/article/ArticleTest.java:23:23
+  23:23  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  36:36  low     Line too long (144 instead of 120)                                              editorconfig-checker:max_line_length
+  36:36  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  50:50  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/article/ArticleTitleTest.java:10:10
+  10:10  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  20:20  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  31:31  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/article/ArticleUpdateRequestTest.java:15:15
+  15:15  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  24:24  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/article/comment/CommentServiceTest.java:41:41
+  41:41  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  50:50  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  57:57  low     Line too long (128 instead of 120)                                              editorconfig-checker:max_line_length
+  57:57  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  67:67  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  77:77  low     Line too long (122 instead of 120)                                              editorconfig-checker:max_line_length
+  77:77  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/article/comment/CommentTest.java:27:27
+  27:27  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  34:34  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  51:51  low     Line too long (124 instead of 120)                                              editorconfig-checker:max_line_length
+  52:52  low     Line too long (122 instead of 120)                                              editorconfig-checker:max_line_length
+  53:53  low     Line too long (124 instead of 120)                                              editorconfig-checker:max_line_length
+  54:54  low     Line too long (125 instead of 120)                                              editorconfig-checker:max_line_length
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/article/tag/TagServiceTest.java:31:31
+  31:31  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  38:38  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  45:45  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  55:55  low     Line too long (139 instead of 120)                                              editorconfig-checker:max_line_length
+  55:55  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/article/tag/TagTest.java:11:11
+  11:11  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  21:21  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  29:29  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  39:39  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/user/EmailTest.java:10:10
+  10:10  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/user/ImageTest.java:10:10
+  10:10  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  17:17  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/user/PasswordTest.java:21:21
+  21:21  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  22:22  high    Define a constant instead of duplicating this literal "raw-password" 6 times.   radarlint-java:java:S1192
+  28:28  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/user/ProfileServiceTest.java:34:34
+  34:34  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  43:43  low     Line too long (124 instead of 120)                                              editorconfig-checker:max_line_length
+  43:43  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  53:53  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  66:66  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  75:75  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  85:85  low     Line too long (124 instead of 120)                                              editorconfig-checker:max_line_length
+  85:85  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  94:94  low     Line too long (143 instead of 120)                                              editorconfig-checker:max_line_length
+  94:94  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+104:104  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+117:117  low     Line too long (126 instead of 120)                                              editorconfig-checker:max_line_length
+117:117  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+126:126  low     Line too long (145 instead of 120)                                              editorconfig-checker:max_line_length
+126:126  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+136:136  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/user/ProfileTestUtils.java:0:0
+    0:0  low     No final newline expected  editorconfig-checker:insert_final_newline
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/user/UserNameTest.java:10:10
+  10:10  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  17:17  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/user/UserRepositoryTest.java:20:20
+  20:20  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  29:29  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/user/UserServiceTest.java:36:36
+  36:36  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  37:37  high    Define a constant instead of duplicating this literal "raw-password" 4 times.   radarlint-java:java:S1192
+  45:45  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  54:54  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  61:61  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  68:68  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  77:77  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  86:86  low     Line too long (124 instead of 120)                                              editorconfig-checker:max_line_length
+  86:86  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  97:97  low     Line too long (129 instead of 120)                                              editorconfig-checker:max_line_length
+  97:97  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+108:108  low     Line too long (124 instead of 120)                                              editorconfig-checker:max_line_length
+108:108  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+110:110  high    Define a constant instead of duplicating this literal "new-password" 4 times.   radarlint-java:java:S1192
+118:118  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+119:120  low     Wrong amount of left-padding spaces(want multiple of 4)                         editorconfig-checker:indent_size
+135:135  low     Line too long (121 instead of 120)                                              editorconfig-checker:max_line_length
+135:135  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+146:146  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/user/UserTest.java:27:27
+  27:27  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  34:34  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  41:41  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  53:53  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  63:63  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  72:72  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  75:75  high    Define a constant instead of duplicating this literal "some-password" 4 times.  radarlint-java:java:S1192
+  81:81  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  90:90  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+100:100  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+109:109  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+118:118  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/user/UserTestUtils.java:0:0
+    0:0  low     No final newline expected                                   editorconfig-checker:insert_final_newline
+    5:5  medium  Add a private constructor to hide the implicit public one.  radarlint-java:java:S1118
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/domain/user/UserUpdateRequestTest.java:15:15
+  15:15  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.     radarlint-java:java:S100
+  22:22  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.     radarlint-java:java:S100
+  33:33  low     Line too long (161 instead of 120)                                                 editorconfig-checker:max_line_length
+  33:33  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.     radarlint-java:java:S100
+  36:36  high    Define a constant instead of duplicating this literal "passwordToUpdate" 5 times.  radarlint-java:java:S1192
+  38:38  high    Define a constant instead of duplicating this literal "bioToUpdate" 5 times.       radarlint-java:java:S1192
+  50:50  low     Line too long (167 instead of 120)                                                 editorconfig-checker:max_line_length
+  50:50  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.     radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/infrastructure/jwt/Base64URLTest.java:13:13
+  13:13  low     Reorder the modifiers to comply with the Java Language Specification.           radarlint-java:java:S1124
+  14:14  low     Reorder the modifiers to comply with the Java Language Specification.           radarlint-java:java:S1124
+  17:17  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  22:22  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  27:27  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  36:36  high    Save and re-use this "Random".                                                  radarlint-java:java:S2119
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/infrastructure/jwt/HmacSHA256JWTServiceTest.java:39:39
+  39:39  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.   radarlint-java:java:S100
+  40:40  high    Define a constant instead of duplicating this literal "user@email.com" 3 times.  radarlint-java:java:S1192
+  48:48  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.   radarlint-java:java:S100
+  55:55  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.   radarlint-java:java:S100
+  58:58  low     Line too long (126 instead of 120)                                               editorconfig-checker:max_line_length
+  62:62  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.   radarlint-java:java:S100
+  69:69  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.   radarlint-java:java:S100
+  78:78  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.   radarlint-java:java:S100
+  87:87  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.   radarlint-java:java:S100
+  96:96  low     Line too long (126 instead of 120)                                               editorconfig-checker:max_line_length
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/infrastructure/jwt/HmacSHA256Test.java:13:13
+  13:13  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  20:20  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/java/io/github/raeperd/realworld/infrastructure/jwt/UserJWTPayloadTest.java:19:19
+  19:19  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  27:27  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  34:34  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+  41:41  low     Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.  radarlint-java:java:S100
+
+realworld-springboot-java/src/test/resources/data.sql:0:0
+    0:0  low     Wrong line endings or no final newline  editorconfig-checker:end_of_line
+
+✖ 415 issues

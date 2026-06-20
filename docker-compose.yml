@@ -1,0 +1,34 @@
+services:
+  backend:
+    build:
+      context: ./realworld-springboot-java
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    volumes:
+      # Mapeia a pasta local para a pasta do jacoco dentro do contêiner
+      # O arquivo jacoco.exec aparecerá em ./realworld-springboot-java/jacoco/jacoco.exec
+      - ./realworld-springboot-java/jacoco:/app/jacoco
+    networks:
+      - realworld-net
+
+  frontend:
+    build:
+      context: ./realworld-app-angular-v20
+      dockerfile: Dockerfile
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
+    volumes:
+      # Mapeia a pasta local para a pasta de cobertura dentro do contêiner
+      # O arquivo coverage.json aparecerá em ./realworld-app-angular-v20/coverage/coverage.json
+      - ./realworld-app-angular-v20/coverage:/app/coverage
+    networks:
+      - realworld-net
+
+networks:
+  realworld-net:
+    driver: bridge

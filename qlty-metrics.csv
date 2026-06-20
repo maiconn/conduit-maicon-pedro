@@ -1,0 +1,54 @@
+     [0/3] 🤔  Planning...  0.02s
+     [1/3] 🔍  Analyzing files over all targets... 1.37s
+     [2/3] 👀  Parsing 87 files...  0.00s
+     [3/3] ✨  Reporting...  
+ name                                                                                            | classes | funcs | fields | cyclo | complex | LCOM | lines |   LOC 
+-------------------------------------------------------------------------------------------------+---------+-------+--------+-------+---------+------+-------+-------
+ realworld-app-angular-v20                                                                       |      37 |   111 |     69 |   119 |      74 |   18 |  1325 |  1090 
+ realworld-app-angular-v20/src                                                                   |      37 |   111 |     69 |   119 |      74 |   18 |  1325 |  1090 
+ realworld-app-angular-v20/src/app                                                               |      37 |   111 |     69 |   116 |      74 |   18 |  1310 |  1077 
+ realworld-app-angular-v20/src/app/core                                                          |      26 |    35 |     12 |    37 |      11 |    7 |   422 |   354 
+ realworld-app-angular-v20/src/app/core/auth                                                     |       4 |    10 |      3 |     4 |       3 |    1 |    93 |    78 
+ realworld-app-angular-v20/src/app/core/interceptors                                             |       0 |     1 |      0 |     2 |       2 |    0 |    17 |    13 
+ realworld-app-angular-v20/src/app/core/models                                                   |       5 |     0 |      0 |     5 |       0 |    0 |    42 |    40 
+ realworld-app-angular-v20/src/app/core/models/auth                                              |       1 |     0 |      0 |     1 |       0 |    0 |     7 |     7 
+ realworld-app-angular-v20/src/app/core/services                                                 |      17 |    24 |      9 |    26 |       6 |    6 |   270 |   223 
+ realworld-app-angular-v20/src/app/features                                                      |       7 |    53 |     48 |    61 |      57 |    7 |   645 |   521 
+ realworld-app-angular-v20/src/app/features/article-details                                      |       1 |    11 |      6 |    12 |      15 |    1 |   109 |    91 
+ realworld-app-angular-v20/src/app/features/auth                                                 |       2 |     6 |     12 |     6 |       6 |    2 |    99 |    82 
+ realworld-app-angular-v20/src/app/features/auth/login                                           |       1 |     3 |      6 |     3 |       3 |    1 |    49 |    40 
+ realworld-app-angular-v20/src/app/features/auth/register                                        |       1 |     3 |      6 |     3 |       3 |    1 |    50 |    42 
+ realworld-app-angular-v20/src/app/features/create-edit-article                                  |       1 |     7 |      6 |     8 |       9 |    1 |   104 |    83 
+ realworld-app-angular-v20/src/app/features/home                                                 |       1 |     9 |      9 |     9 |       5 |    1 |   112 |    87 
+ realworld-app-angular-v20/src/app/features/profile                                              |       1 |    11 |      8 |    18 |      17 |    1 |   134 |   104 
+ realworld-app-angular-v20/src/app/features/settings                                             |       1 |     9 |      7 |     8 |       5 |    1 |    87 |    74 
+ realworld-app-angular-v20/src/app/shared                                                        |       3 |    14 |      8 |    15 |       6 |    3 |   138 |   114 
+ realworld-app-angular-v20/src/app/shared/ui                                                     |       3 |    12 |      8 |     7 |       2 |    3 |   123 |   102 
+ realworld-app-angular-v20/src/app/shared/ui/article-preview                                     |       1 |     1 |      2 |     1 |       0 |    1 |    26 |    21 
+ realworld-app-angular-v20/src/app/shared/ui/comment-list                                        |       1 |    10 |      5 |     5 |       2 |    1 |    79 |    65 
+ realworld-app-angular-v20/src/app/shared/ui/popular-tags                                        |       1 |     1 |      1 |     1 |       0 |    1 |    18 |    16 
+ realworld-app-angular-v20/src/environments                                                      |       0 |     0 |      0 |     2 |       0 |    0 |     9 |     8 
+ realworld-springboot-java                                                                       |      63 |   258 |    136 |   126 |      34 |   36 |  2390 |  1871 
+ realworld-springboot-java/src                                                                   |      63 |   258 |    136 |   126 |      34 |   36 |  2390 |  1871 
+ realworld-springboot-java/src/main                                                              |      63 |   258 |    136 |   126 |      34 |   36 |  2390 |  1871 
+ realworld-springboot-java/src/main/java                                                         |      63 |   258 |    136 |   126 |      34 |   36 |  2390 |  1871 
+ realworld-springboot-java/src/main/java/io                                                      |      63 |   258 |    136 |   126 |      34 |   36 |  2390 |  1871 
+ realworld-springboot-java/src/main/java/io/github                                               |      63 |   258 |    136 |   126 |      34 |   36 |  2390 |  1871 
+ realworld-springboot-java/src/main/java/io/github/raeperd                                       |      63 |   258 |    136 |   126 |      34 |   36 |  2390 |  1871 
+ realworld-springboot-java/src/main/java/io/github/raeperd/realworld                             |      63 |   258 |    136 |   126 |      34 |   36 |  2390 |  1871 
+ realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application                 |      26 |    56 |     60 |    21 |       0 |   14 |   832 |   662 
+ realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/article         |      11 |    25 |     30 |     9 |       0 |    6 |   358 |   288 
+ realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/article/comment |       5 |     8 |      9 |     4 |       0 |    2 |   126 |    98 
+ realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/security        |       4 |    11 |      5 |     2 |       0 |    2 |   143 |   112 
+ realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/tag             |       2 |     3 |      2 |     2 |       0 |    1 |    44 |    31 
+ realworld-springboot-java/src/main/java/io/github/raeperd/realworld/application/user            |       8 |    16 |     23 |     7 |       0 |    5 |   270 |   217 
+ realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain                      |      29 |   184 |     64 |    83 |      28 |   17 |  1345 |  1046 
+ realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/article              |      13 |    88 |     34 |    42 |      15 |   10 |   696 |   546 
+ realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/article/comment      |       2 |    14 |      8 |    11 |       4 |    2 |   140 |   111 
+ realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/article/tag          |       3 |    11 |      3 |     9 |       3 |    2 |    94 |    70 
+ realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/jwt                  |       3 |     4 |      0 |     3 |       0 |    0 |    26 |    15 
+ realworld-springboot-java/src/main/java/io/github/raeperd/realworld/domain/user                 |      13 |    92 |     30 |    38 |      13 |    7 |   623 |   485 
+ realworld-springboot-java/src/main/java/io/github/raeperd/realworld/infrastructure              |       7 |    17 |     12 |    21 |       6 |    5 |   200 |   154 
+ realworld-springboot-java/src/main/java/io/github/raeperd/realworld/infrastructure/jwt          |       6 |    17 |     12 |    20 |       6 |    5 |   191 |   147 
+ realworld-springboot-java/src/main/java/io/github/raeperd/realworld/infrastructure/repository   |       1 |     0 |      0 |     1 |       0 |    0 |     9 |     7 
+ TOTAL                                                                                           |     826 |  3163 |   1743 |  1869 |     721 |  459 | 30810 | 24379 
