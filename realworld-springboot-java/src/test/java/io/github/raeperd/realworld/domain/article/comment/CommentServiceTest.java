@@ -83,4 +83,88 @@ class CommentServiceTest {
         then(user).should(times(1)).deleteArticleComment(article, 2L);
     }
 
+    @Test
+    void given_user_and_article_when_createComment_then_return_created_comment(
+            @Mock User user,
+            @Mock Article article,
+            @Mock Comment comment
+    ) {
+        given(userFindService.findById(1L)).willReturn(of(user));
+        given(articleFindService.getArticleBySlug("slug")).willReturn(of(article));
+        given(user.writeCommentToArticle(article, "body")).willReturn(comment);
+
+        Comment createdComment = commentService.createComment(1L, "slug", "body");
+
+        assertThat(createdComment).isEqualTo(comment);
+
+        then(user).should(times(1))
+                .writeCommentToArticle(article, "body");
+    }
+
+    @Test
+    void when_createComment_and_user_not_found_then_throw_NoSuchElementException(
+            @Mock Article article
+    ) {
+        given(userFindService.findById(1L)).willReturn(empty());
+        given(articleFindService.getArticleBySlug("slug")).willReturn(of(article));
+
+        assertThatThrownBy(() ->
+                commentService.createComment(1L, "slug", "body")
+        ).isInstanceOf(NoSuchElementException.class);
+    }
+
+    @Test
+    void when_createComment_and_article_not_found_then_throw_NoSuchElementException(
+            @Mock User user
+    ) {
+        given(userFindService.findById(1L)).willReturn(of(user));
+        given(articleFindService.getArticleBySlug("slug")).willReturn(empty());
+
+        assertThatThrownBy(() ->
+                commentService.createComment(1L, "slug", "body")
+        ).isInstanceOf(NoSuchElementException.class);
+    }
+
+    @Test
+    void given_user_and_article_when_getComments_then_return_comments(
+            @Mock User user,
+            @Mock Article article,
+            @Mock Comment comment
+    ) {
+        given(userFindService.findById(1L)).willReturn(of(user));
+        given(articleFindService.getArticleBySlug("slug")).willReturn(of(article));
+        given(user.viewArticleComments(article)).willReturn(Set.of(comment));
+
+        Set<Comment> comments = commentService.getComments(1L, "slug");
+
+        assertThat(comments).containsExactly(comment);
+
+        then(user).should(times(1))
+                .viewArticleComments(article);
+    }
+
+    @Test
+    void when_getComments_and_user_not_found_then_throw_NoSuchElementException(
+            @Mock Article article
+    ) {
+        given(userFindService.findById(1L)).willReturn(empty());
+        given(articleFindService.getArticleBySlug("slug")).willReturn(of(article));
+
+        assertThatThrownBy(() ->
+                commentService.getComments(1L, "slug")
+        ).isInstanceOf(NoSuchElementException.class);
+    }
+
+    @Test
+    void when_getComments_and_article_not_found_then_throw_NoSuchElementException(
+            @Mock User user
+    ) {
+        given(userFindService.findById(1L)).willReturn(of(user));
+        given(articleFindService.getArticleBySlug("slug")).willReturn(empty());
+
+        assertThatThrownBy(() ->
+                commentService.getComments(1L, "slug")
+        ).isInstanceOf(NoSuchElementException.class);
+    }
+
 }

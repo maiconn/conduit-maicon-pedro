@@ -3,16 +3,14 @@ package io.github.raeperd.realworld.domain.article;
 import static java.util.Optional.empty;
 import static java.util.Optional.of;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
-import static org.mockito.Mockito.any;
-import static org.mockito.Mockito.anyLong;
-import static org.mockito.Mockito.doReturn;
-import static org.mockito.Mockito.eq;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
+import io.github.raeperd.realworld.domain.article.comment.Comment;
 import io.github.raeperd.realworld.domain.article.tag.Tag;
 import io.github.raeperd.realworld.domain.article.tag.TagService;
 import io.github.raeperd.realworld.domain.user.User;
@@ -281,4 +279,192 @@ class ArticleServiceTest {
                     .isInstanceOf(NoSuchElementException.class);
         }
     }
+
+
+    @Test
+    void when_user_favorites_article_then_article_becomes_favorited() {
+        User author = mock(User.class);
+        User user = mock(User.class);
+        ArticleContents contents = mock(ArticleContents.class);
+
+        Article article = new Article(author, contents);
+
+        Article returned = article.afterUserFavoritesArticle(user);
+
+        assertThat(returned).isSameAs(article);
+        assertThat(article.isFavorited()).isTrue();
+        assertThat(article.getFavoritedCount()).isEqualTo(1);
+    }
+
+    @Test
+    void when_user_unfavorites_article_then_article_becomes_not_favorited() {
+        User author = mock(User.class);
+        User user = mock(User.class);
+        ArticleContents contents = mock(ArticleContents.class);
+
+        Article article = new Article(author, contents);
+
+        article.afterUserFavoritesArticle(user);
+
+        Article returned = article.afterUserUnFavoritesArticle(user);
+
+        assertThat(returned).isSameAs(article);
+        assertThat(article.isFavorited()).isFalse();
+        assertThat(article.getFavoritedCount()).isZero();
+    }
+
+    @Test
+    void when_add_comment_then_comment_added_to_collection() {
+        User author = mock(User.class);
+        User commentAuthor = mock(User.class);
+        ArticleContents contents = mock(ArticleContents.class);
+
+        Article article = new Article(author, contents);
+
+        Comment comment = article.addComment(commentAuthor, "body");
+
+        assertThat(comment).isNotNull();
+        assertTrue(article.getComments().contains(comment));
+        assertEquals(1, article.getComments().size());
+    }
+
+    @Test
+    void when_remove_comment_and_user_not_authorized_then_throw_exception() {
+        User author = mock(User.class);
+        User anotherUser = mock(User.class);
+
+        ArticleContents contents = mock(ArticleContents.class);
+
+        Article article = new Article(author, contents);
+
+        Comment comment = mock(Comment.class);
+
+        when(comment.getId()).thenReturn(1L);
+
+        article.getComments().add(comment);
+
+        assertThatThrownBy(() ->
+                article.removeCommentByUser(anotherUser, 1L)
+        ).isInstanceOf(IllegalAccessError.class)
+                .hasMessage("Not authorized to delete comment");
+    }
+
+    @Test
+    void when_remove_non_existing_comment_then_throw_exception() {
+        User author = mock(User.class);
+        ArticleContents contents = mock(ArticleContents.class);
+
+        Article article = new Article(author, contents);
+
+        assertThatThrownBy(() ->
+                article.removeCommentByUser(author, 999L)
+        ).isInstanceOf(NoSuchElementException.class);
+    }
+
+    @Test
+    void when_update_article_then_delegate_to_contents() {
+        User author = mock(User.class);
+        ArticleContents contents = mock(ArticleContents.class);
+        ArticleUpdateRequest request = mock(ArticleUpdateRequest.class);
+
+        Article article = new Article(author, contents);
+
+        article.updateArticle(request);
+
+        verify(contents, times(1))
+                .updateArticleContentsIfPresent(request);
+    }
+
+    @Test
+    void when_update_favorite_by_user_and_user_not_present_then_false() {
+        User author = mock(User.class);
+        User anotherUser = mock(User.class);
+
+        ArticleContents contents = mock(ArticleContents.class);
+
+        Article article = new Article(author, contents);
+
+        article.updateFavoriteByUser(anotherUser);
+
+        assertThat(article.isFavorited()).isFalse();
+    }
+
+    @Test
+    void when_getters_called_then_return_expected_values() {
+        User author = mock(User.class);
+        ArticleContents contents = mock(ArticleContents.class);
+
+        Article article = new Article(author, contents);
+
+        assertThat(article.getAuthor()).isEqualTo(author);
+        assertThat(article.getContents()).isEqualTo(contents);
+        assertThat(article.getComments()).isNotNull();
+        assertThat(article.getFavoritedCount()).isZero();
+        assertThat(article.isFavorited()).isFalse();
+    }
+
+    @Test
+    void when_equals_same_instance_then_true() {
+        User author = mock(User.class);
+        ArticleContents contents = mock(ArticleContents.class);
+
+        Article article = new Article(author, contents);
+
+        assertThat(article).isEqualTo(article);
+    }
+
+    @Test
+    void when_equals_null_then_false() {
+        User author = mock(User.class);
+        ArticleContents contents = mock(ArticleContents.class);
+
+        Article article = new Article(author, contents);
+
+        assertThat(article).isNotEqualTo(null);
+    }
+
+    @Test
+    void when_equals_different_class_then_false() {
+        User author = mock(User.class);
+        ArticleContents contents = mock(ArticleContents.class);
+
+        Article article = new Article(author, contents);
+
+        assertThat(article).isNotEqualTo("string");
+    }
+
+    @Test
+    void when_equals_same_author_and_title_then_true() {
+        User author = mock(User.class);
+
+        ArticleContents contents1 = mock(ArticleContents.class);
+        ArticleContents contents2 = mock(ArticleContents.class);
+
+        when(contents1.getTitle()).thenReturn(ArticleTitle.of("same-title"));
+        when(contents2.getTitle()).thenReturn(ArticleTitle.of("same-title"));
+
+        Article article1 = new Article(author, contents1);
+        Article article2 = new Article(author, contents2);
+
+        assertThat(article1).isEqualTo(article2);
+        assertThat(article1.hashCode()).isEqualTo(article2.hashCode());
+    }
+
+    @Test
+    void when_equals_different_title_then_false() {
+        User author = mock(User.class);
+
+        ArticleContents contents1 = mock(ArticleContents.class);
+        ArticleContents contents2 = mock(ArticleContents.class);
+
+        when(contents1.getTitle()).thenReturn(ArticleTitle.of("title-1"));
+        when(contents2.getTitle()).thenReturn(ArticleTitle.of("title-2"));
+
+        Article article1 = new Article(author, contents1);
+        Article article2 = new Article(author, contents2);
+
+        assertThat(article1).isNotEqualTo(article2);
+    }
+
+
 }

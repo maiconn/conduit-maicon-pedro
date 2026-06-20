@@ -38,6 +38,13 @@ class ArticleContentsTest {
         assertThat(articleContents.getBody()).isEqualTo("bodyToUpdate");
     }
 
+    @Test
+    void deveTestarTags(){
+        final var articleContents = sampleArticleContents();
+        articleContents.setTags(emptySet());
+        assertThat(articleContents.getTags()).isEmpty();
+    }
+
     private ArticleContents sampleArticleContents() {
         return new ArticleContents("description", ArticleTitle.of("title"), "body", emptySet());
     }

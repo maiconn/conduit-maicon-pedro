@@ -24,6 +24,11 @@ class Base64URLTest {
     }
 
     @Test
+    void deveTestarInstancia(){
+        
+    }
+
+    @Test
     void when_encode_and_then_decode_expect_same() {
         final var rawString = generateRandomString();
 
