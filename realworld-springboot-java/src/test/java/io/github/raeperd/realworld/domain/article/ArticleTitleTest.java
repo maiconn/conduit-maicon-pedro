@@ -3,6 +3,7 @@ package io.github.raeperd.realworld.domain.article;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.*;
 
 class ArticleTitleTest {
 
@@ -35,5 +36,45 @@ class ArticleTitleTest {
         assertThat(articleTitleWithSameSlug)
                 .isEqualTo(articleTitle)
                 .hasSameHashCodeAs(articleTitle);
+    }
+
+    @Test
+    void deveTestarOArticleTitleESlug() {
+        String someTitle = "some title";
+        String slug = "some-title";
+        var articleTitle = ArticleTitle.of(someTitle);
+        assertThat(someTitle)
+                .isEqualTo(articleTitle.getTitle());
+
+        assertThat(slug)
+                .isEqualTo(articleTitle.getSlug());
+    }
+
+
+    @Test
+    void shouldBeEqualWhenSlugIsEqual() {
+        ArticleTitle first = ArticleTitle.of("Hello World");
+        ArticleTitle second = ArticleTitle.of("hello world");
+
+        assertEquals(first, second);
+        assertEquals(first.hashCode(), second.hashCode());
+    }
+
+    @Test
+    void deveTestarOMetodoEquals() {
+        ArticleTitle articleTitle = ArticleTitle.of("Hello World");
+
+        assertNotEquals(articleTitle, "string");
+        assertFalse(articleTitle.equals(null));
+        assertEquals(articleTitle, articleTitle);
+    }
+
+
+    @Test
+    void shouldCreateInstanceUsingProtectedConstructor() {
+        ArticleTitle articleTitle = new ArticleTitle() {
+        };
+
+        assertNotNull(articleTitle);
     }
 }
